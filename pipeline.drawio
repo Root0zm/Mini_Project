@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 OPR/123.0.0.0" version="29.0.2">
+  <diagram name="Page-1" id="XCBsI3IlPlBUo8LKUSfO">
+    <mxGraphModel dx="1000" dy="572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qi3y1UGBmGjmsuiQSCzA-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="70" width="720" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="qi3y1UGBmGjmsuiQSCzA-4" value="Stage 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="70" width="720" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qi3y1UGBmGjmsuiQSCzA-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="310" width="720" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="qi3y1UGBmGjmsuiQSCzA-6" value="Stage 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="310" width="720" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qi3y1UGBmGjmsuiQSCzA-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qi3y1UGBmGjmsuiQSCzA-9" target="qi3y1UGBmGjmsuiQSCzA-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qi3y1UGBmGjmsuiQSCzA-9" value="Dataset 111 class" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qi3y1UGBmGjmsuiQSCzA-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qi3y1UGBmGjmsuiQSCzA-10" target="qi3y1UGBmGjmsuiQSCzA-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qi3y1UGBmGjmsuiQSCzA-10" value="Model: yolo12m.pt&lt;div&gt;epochs: 100&lt;/div&gt;&lt;div&gt;batch: 16&lt;/div&gt;&lt;div&gt;imgsz=640&lt;br&gt;&lt;div&gt;Aug: Mosaic= 1.0, Mixup = 1.0&lt;/div&gt;&lt;div&gt;Optimizer: auto&lt;/div&gt;&lt;div&gt;lr = 8.7e-5&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="122.5" width="210" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="qi3y1UGBmGjmsuiQSCzA-11" value="best.pt&lt;div&gt;(mAP 0.533)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qi3y1UGBmGjmsuiQSCzA-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qi3y1UGBmGjmsuiQSCzA-17" target="qi3y1UGBmGjmsuiQSCzA-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qi3y1UGBmGjmsuiQSCzA-17" value="Dataset 111 class" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qi3y1UGBmGjmsuiQSCzA-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qi3y1UGBmGjmsuiQSCzA-18" target="qi3y1UGBmGjmsuiQSCzA-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qi3y1UGBmGjmsuiQSCzA-18" value="Model: best.pt&lt;div&gt;epochs: 100&lt;div&gt;batch: 16&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;imgsz=640&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Data: classes=[15 VN IDs]&lt;br&gt;&lt;div&gt;Aug: Mosaic= 0.0, Mixup = 0.0&lt;/div&gt;&lt;div&gt;Optimizer: AdamW&lt;/div&gt;&lt;div&gt;lr = 1e-5&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="350" width="210" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="qi3y1UGBmGjmsuiQSCzA-19" value="vietbest.pt&lt;div&gt;(mAP 0.811)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
